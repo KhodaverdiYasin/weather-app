@@ -1,0 +1,106 @@
+.weather-container {
+    padding: 16px;
+    font-family: 'Arial', sans-serif;
+
+    .forecast-section {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #fff;
+
+        h2 {
+            margin: 0 0 10px 0;
+            color: black;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .forecast-cards-hourly {
+            display: flex;
+            overflow-x: auto;
+
+            .forecast-card {
+                min-width: 100px;
+                text-align: center;
+                margin-right: 10px;
+                padding: 10px;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                .forecast-icon {
+                    margin: 5px 0;
+
+                    img {
+                        width: 100px;
+                    }
+                }
+
+                .forecast-temperature {
+                    font-weight: bold;
+                    margin: 5px 0;
+                }
+
+                .forecast-time,
+                .forecast-date {
+                    margin: 5px 0;
+                }
+
+                .forecast-description {
+                    font-size: 0.85em;
+                    color: #555;
+                }
+            }
+        }
+
+        .forecast-cards-daily {
+            display: flex;
+            overflow-x: auto;
+            flex-direction: column;
+
+
+            .forecast-card {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 100px;
+                text-align: center;
+                margin-bottom: 10px;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                .forecast-icon {
+                    margin: 0 5px;
+
+                    img {
+                        width: 100px;
+                    }
+                }
+
+                .forecast-temperature-range {
+                    font-weight: bold;
+                    margin: 0 5px;
+                }
+
+                .forecast-time,
+                .forecast-date {
+                    font-size: 2em;
+                    margin: 15px 0;
+                }
+
+                .forecast-description {
+                    font-size: 1em;
+                    color: #555;
+                }
+            }
+        }
+    }
+
+    .last-updated {
+        font-size: 1.1em;
+        text-align: right;
+        color: #fff;
+        margin-top: 20px;
+    }
+}
